@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eve-ios", "eve-ios\eve-ios.csproj", "{59F16045-C0E8-4F36-88BD-5059269C6630}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2BA2D761-C451-4326-9014-A60B2E08C226}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -25,6 +30,8 @@ Global
 		{59F16045-C0E8-4F36-88BD-5059269C6630}.Release|iPhone.Build.0 = Release|iPhone
 		{59F16045-C0E8-4F36-88BD-5059269C6630}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{59F16045-C0E8-4F36-88BD-5059269C6630}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = eve-ios\eve-ios.csproj
