@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{61DB7981-BC6C-4523-B415-A2DB43C12DA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -30,6 +32,18 @@ Global
 		{59F16045-C0E8-4F36-88BD-5059269C6630}.Release|iPhone.Build.0 = Release|iPhone
 		{59F16045-C0E8-4F36-88BD-5059269C6630}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{59F16045-C0E8-4F36-88BD-5059269C6630}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Debug|iPhone.Build.0 = Debug|iPhone
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Release|iPhone.ActiveCfg = Release|iPhone
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Release|iPhone.Build.0 = Release|iPhone
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{61DB7981-BC6C-4523-B415-A2DB43C12DA6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
