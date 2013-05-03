@@ -4,6 +4,7 @@ using System.Linq;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using MonoTouch.Dialog;
 
 namespace eveios
 {
@@ -15,6 +16,7 @@ namespace eveios
 	{
 		// class-level declarations
 		UIWindow window;
+		UINavigationController navigation;
 
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
@@ -28,13 +30,35 @@ namespace eveios
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 			
-			// If you have defined a root view controller, set it here:
-			// window.RootViewController = myViewController;
-			
+			var rootVC = new DialogViewController(CreateRoot());
+			navigation = new  UINavigationController(rootVC);
+			window.RootViewController = navigation;
+
 			// make the window visible
 			window.MakeKeyAndVisible ();
 			
 			return true;
+		}
+
+		RootElement CreateRoot(){
+			var rootElement = new RootElement("Eve iOS"){
+				new Section(){
+					new StyledMultilineElement("This app will consume a Eve-powered REST API. To get started, enter the API entry point in the field below.")
+					{
+						Font = UIFont.FromName ("Helvetica", 14f)
+					}
+
+				},
+				new Section(){
+					new EntryElement("URL", "API entry point URL", "http://eve-demo.herokuapp.com/")
+				},
+				new Section(){
+					new StringElement("Go!", ResourcesView){
+						Alignment = UITextAlignment.Center,
+					}
+				},
+			};
+			return rootElement;
 		}
 	}
 }
